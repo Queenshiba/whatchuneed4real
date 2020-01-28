@@ -1,0 +1,172 @@
+[
+    {
+        "craving": "Chocolate",
+        "reason": "Magnesium",
+        "solution": "Raw nuts and seeds, legumes, fruits"
+    },
+    {
+        "craving": "Sweets",
+        "reason": "Chromium",
+        "solution": "Broccoli, grapes, cheese, dried beans, calves liver, chicken"
+    },
+    {
+        "craving": "",
+        "reason": "Carbon",
+        "solution": "Fresh fruits"
+    },
+    {
+        "craving": "",
+        "reason": "Phosphorus",
+        "solution": "Chicken, beef, liver, poultry, fish, eggs, dairy, nuts, legumes, grains"
+    },
+    {
+        "craving": "",
+        "reason": "Sulfur",
+        "solution": "Cranberries, horseradish, cruciferous vegetables, kale, cabbage"
+    },
+    {
+        "craving": "",
+        "reason": "Tryptophan",
+        "solution": "Cheese, liver, lamb, raisins, sweet potato, spinach"
+    },
+    {
+        "craving": "Bread, toast",
+        "reason": "Nitrogen",
+        "solution": "High protein foods: fish, meat, nuts, beans"
+    },
+    {
+        "craving": "Oily snacks, fatty foods",
+        "reason": "Calcium",
+        "solution": "Mustard and turnip greens, broccoli, kale, legumes, cheese, sesame"
+    },
+    {
+        "craving": "Coffee or tea",
+        "reason": "Phosphorous",
+        "solution": "Chicken, beef, liver, poultry, fish, eggs, dairy, nuts, legumes"
+    },
+    {
+        "craving": "",
+        "reason": "Sulfur",
+        "solution": "Egg yolks, red peppers, muscle protein, garlic, onion, cruciferous vegetables"
+    },
+    {
+        "craving": "",
+        "reason": "NaCl (salt)",
+        "solution": "Sea salt, apple cider vinegar (on salad)"
+    },
+    {
+        "craving": "",
+        "reason": "Iron",
+        "solution": "Meat, fish and poultry, seaweed, greens, black cherries"
+    },
+    {
+        "craving": "Alcohol, recreational drugs",
+        "reason": "Protein",
+        "solution": "Meat, poultry, seafood, dairy, nuts"
+    },
+    {
+        "craving": "",
+        "reason": "Avenin",
+        "solution": "Granola, oatmeal"
+    },
+    {
+        "craving": "",
+        "reason": "Calcium",
+        "solution": "Mustard and turnip greens, broccoli, kale, legumes, cheese, sesame"
+    },
+    {
+        "craving": "",
+        "reason": "Glutamine",
+        "solution": "Supplement glutamine powder for withdrawal, raw cabbage juice"
+    },
+    {
+        "craving": "",
+        "reason": "Potassium",
+        "solution": "Sun-dried black olives, potato peel broth, seaweed, bitter greens"
+    },
+    {
+        "craving": "Chewing ice",
+        "reason": "Iron",
+        "solution": "Meat, fish, poultry, seaweed, greens, black cherries"
+    },
+    {
+        "craving": "Burned food",
+        "reason": "Carbon",
+        "solution": "Fresh fruits"
+    },
+    {
+        "craving": "Soda and other carbonated drinks",
+        "reason": "Calcium",
+        "solution": "Mustard and turnip greens, broccoli, kale, legumes, cheese, sesame"
+    },
+    {
+        "craving": "Salty foods",
+        "reason": "Chloride",
+        "solution": "Raw goat milk, fish, unrefined sea salt"
+    },
+    {
+        "craving": "Acid foods",
+        "reason": "Magnesium",
+        "solution": "Raw nuts and seeds, legumes, fruits"
+    },
+    {
+        "craving": "Preference for liquids rather than solids",
+        "reason": "Water",
+        "solution": "Flavor water with lemon or lime. You need 8 to 10 glasses per day."
+    },
+    {
+        "craving": "Preference for solids rather than liquids",
+        "reason": "Water",
+        "solution": "You have been so dehydrated for so long that you have lost your thirst. Flavor water with lemon or lime. You need 8 to 10 glasses per day."
+    },
+    {
+        "craving": "Cool drinks",
+        "reason": "Manganese",
+        "solution": "Walnuts, almonds, pecans, pineapple, blueberries"
+    },
+    {
+        "craving": "Pre-menstrual",
+        "reason": "Zinc",
+        "solution": "Red meats (especially organ meats), seafood, leafy vegetables, root vegetables"
+    },
+    {
+        "craving": "General overeating",
+        "reason": "Silicon",
+        "solution": "Nuts, seeds; avoid refined starches"
+    },
+    {
+        "craving": "",
+        "reason": "Tryptophan",
+        "solution": "Cheese, liver, lamb, raisins, sweet potato, spinach"
+    },
+    {
+        "craving": "",
+        "reason": "Tyrosine",
+        "solution": "Vitamin C supplements or orange, green, red fruits and vegetables"
+    },
+    {
+        "craving": "Lack of appetite",
+        "reason": "Vitamin B1",
+        "solution": "Nuts, seeds, beans, liver and other organ meats"
+    },
+    {
+        "craving": "",
+        "reason": "Vitamin B3",
+        "solution": "Tuna, halibut, beef, chicken, turkey, pork, seeds and legumes"
+    },
+    {
+        "craving": "",
+        "reason": "Manganese",
+        "solution": "Walnuts, almonds, pecans, pineapple, blueberries"
+    },
+    {
+        "craving": "Tobacco",
+        "reason": "Silicon",
+        "solution": "Nuts, seeds; avoid refined starches"
+    },
+    {
+        "craving": "",
+        "reason": "Tyrosine",
+        "solution": "Vitamin C supplements or orange, green and red fruits and vegetables"
+    }
+]
