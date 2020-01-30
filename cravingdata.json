@@ -1,4 +1,5 @@
-[
+{
+"cravingdata" : [
     {
         "craving": "Chocolate",
         "reason": "Magnesium",
@@ -10,22 +11,22 @@
         "solution": "Broccoli, grapes, cheese, dried beans, calves liver, chicken"
     },
     {
-        "craving": "",
+        "craving": "Sweets",
         "reason": "Carbon",
         "solution": "Fresh fruits"
     },
     {
-        "craving": "",
+        "craving": "Sweets",
         "reason": "Phosphorus",
         "solution": "Chicken, beef, liver, poultry, fish, eggs, dairy, nuts, legumes, grains"
     },
     {
-        "craving": "",
+        "craving": "Sweets",
         "reason": "Sulfur",
         "solution": "Cranberries, horseradish, cruciferous vegetables, kale, cabbage"
     },
     {
-        "craving": "",
+        "craving": "Sweets",
         "reason": "Tryptophan",
         "solution": "Cheese, liver, lamb, raisins, sweet potato, spinach"
     },
@@ -45,17 +46,17 @@
         "solution": "Chicken, beef, liver, poultry, fish, eggs, dairy, nuts, legumes"
     },
     {
-        "craving": "",
+        "craving": "Coffee or tea",
         "reason": "Sulfur",
         "solution": "Egg yolks, red peppers, muscle protein, garlic, onion, cruciferous vegetables"
     },
     {
-        "craving": "",
+        "craving": "Coffee or tea",
         "reason": "NaCl (salt)",
         "solution": "Sea salt, apple cider vinegar (on salad)"
     },
     {
-        "craving": "",
+        "craving": "Coffee or tea",
         "reason": "Iron",
         "solution": "Meat, fish and poultry, seaweed, greens, black cherries"
     },
@@ -65,22 +66,22 @@
         "solution": "Meat, poultry, seafood, dairy, nuts"
     },
     {
-        "craving": "",
+        "craving": "Alcohol, recreational drugs",
         "reason": "Avenin",
         "solution": "Granola, oatmeal"
     },
     {
-        "craving": "",
+        "craving": "Alcohol, recreational drugs",
         "reason": "Calcium",
         "solution": "Mustard and turnip greens, broccoli, kale, legumes, cheese, sesame"
     },
     {
-        "craving": "",
+        "craving": "Alcohol, recreational drugs",
         "reason": "Glutamine",
         "solution": "Supplement glutamine powder for withdrawal, raw cabbage juice"
     },
     {
-        "craving": "",
+        "craving": "Alcohol, recreational drugs",
         "reason": "Potassium",
         "solution": "Sun-dried black olives, potato peel broth, seaweed, bitter greens"
     },
@@ -135,12 +136,12 @@
         "solution": "Nuts, seeds; avoid refined starches"
     },
     {
-        "craving": "",
+        "craving": "General overeating",
         "reason": "Tryptophan",
         "solution": "Cheese, liver, lamb, raisins, sweet potato, spinach"
     },
     {
-        "craving": "",
+        "craving": "General overeating",
         "reason": "Tyrosine",
         "solution": "Vitamin C supplements or orange, green, red fruits and vegetables"
     },
@@ -150,12 +151,12 @@
         "solution": "Nuts, seeds, beans, liver and other organ meats"
     },
     {
-        "craving": "",
+        "craving": "Lack of appetite",
         "reason": "Vitamin B3",
         "solution": "Tuna, halibut, beef, chicken, turkey, pork, seeds and legumes"
     },
     {
-        "craving": "",
+        "craving": "Lack of appetite",
         "reason": "Manganese",
         "solution": "Walnuts, almonds, pecans, pineapple, blueberries"
     },
@@ -165,8 +166,9 @@
         "solution": "Nuts, seeds; avoid refined starches"
     },
     {
-        "craving": "",
+        "craving": "Tobacco",
         "reason": "Tyrosine",
         "solution": "Vitamin C supplements or orange, green and red fruits and vegetables"
     }
 ]
+}
