@@ -1,8 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 #list {
     background: green;
+    transition: background-color .5s;
+}
+li:hover {
+    background-color: yellowgreen;
+}
+a {
+    text-decoration: none;
+
 }
