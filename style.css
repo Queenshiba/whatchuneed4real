@@ -3,14 +3,25 @@
     margin: 0;
     font-size: 1em;
 }
-#list {
-    background: green;
+#myList {
+    background: lightslategrey;
     transition: background-color .5s;
 }
 li:hover {
-    background-color: yellowgreen;
+    background-color: lightgray;
+    border: black;
 }
+
 a {
     text-decoration: none;
 
+}
+input {
+    height: 30px;
+    width: 50%;
+    background: gray;
+    border: none;
+}
+::placeholder {
+    color: white;
 }
