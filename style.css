@@ -25,3 +25,9 @@ input {
 ::placeholder {
     color: white;
 }
+
+.result-container {
+    background: palevioletred;
+    display: flex;
+    flex-direction: column;
+}

@@ -14,7 +14,7 @@ fetch("./cravingdata.json")
         for (let i = 0; i < 34; i++) {
             const cravingitem = data.cravingdata[i].craving
             const cravingitemLower = cravingitem.toLowerCase()
-            
+
             const reasonitem = data.cravingdata[i].reason
             const solutionitem = data.cravingdata[i].solution
             // console.log(cravingitem)
@@ -42,7 +42,13 @@ fetch("./cravingdata.json")
             allatags.classList.add("link");
 
 
+
+
+            
         }
+
+
+
 
 
     })
@@ -54,7 +60,7 @@ function searchFun() {
     filter = input.value.toLowerCase();
     ul = document.getElementById("myList");
     li = ul.getElementsByTagName('li');
-    
+
 
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
@@ -65,7 +71,5 @@ function searchFun() {
         } else {
             li[i].style.display = "none";
         }
-
-    }   
-    
+    }
 }
