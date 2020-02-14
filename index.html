@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="loader"><p>searching</p></div>
     <p>I'm craving for ...</p>
 
     <input type="text" id="myInput" placeholder="Type..." onkeyup="searchFun()">
@@ -22,9 +23,9 @@
 
     <div class="result-container">
         <p>What you actually need is</p>
-        <p class="reason-text"></p>
+        <p id="reason-text"></p>
         <p>You should have this instead...</p>
-        <p class="solution"></p>
+        <p id="solution"></p>
     </div>
 
 </body>

@@ -3,10 +3,12 @@
     margin: 0;
     font-size: 1em;
 }
+
 #myList {
     background: lightslategrey;
     transition: background-color .5s;
 }
+
 li:hover {
     background-color: lightgray;
     border: black;
@@ -14,14 +16,15 @@ li:hover {
 
 a {
     text-decoration: none;
-
 }
+
 input {
     height: 30px;
     width: 50%;
     background: gray;
     border: none;
 }
+
 ::placeholder {
     color: white;
 }
@@ -30,4 +33,25 @@ input {
     background: palevioletred;
     display: flex;
     flex-direction: column;
+}
+
+.loader {
+    display: none;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -9,49 +9,48 @@ fetch("./cravingdata.json")
         console.log(data)
         const cravings = data.cravingdata[2];
 
-
-
         for (let i = 0; i < 34; i++) {
             const cravingitem = data.cravingdata[i].craving
+
             const cravingitemLower = cravingitem.toLowerCase()
 
             const reasonitem = data.cravingdata[i].reason
             const solutionitem = data.cravingdata[i].solution
             // console.log(cravingitem)
 
-
-            // CREATE <a> in <li> of CravingItem
-
-            // decleare createATags as create <a> tag
-            var createATags = document.createElement("a");
-            // add href="#" in <a> tags
-            createATags.setAttribute('href', "#");
+            // CREATE  <li> of CravingItem
 
             // decleare createLiTags as create <li> tag
             var createLi = document.createElement("li");
             // Create a text node 
             var textnode = document.createTextNode(cravingitemLower);
             // Append the text to <li>
-            createATags.appendChild(textnode);
+            createLi.appendChild(textnode);
 
             // Append <li> to <ul> with id="list"
             var allLi = document.getElementById("myList").appendChild(createLi)
             allLi.classList.add("list");
-            // Append <a> to <li>
-            var allatags = allLi.appendChild(createATags)
-            allatags.classList.add("link");
 
 
+            const li = document.getElementsByTagName('li');
+            // console.log(li)
+            const reasonText = document.getElementById("reason-text");
+            // console.log(reasonText)
+            const solutionText = document.getElementById("solution");
+            // console.log(solutionText)
 
-
-            
+            addEventListener("click", (event) => {
+                reasonText.textContent = "yo";
+                solutionText.textContent = "yo";
+            });
         }
 
 
 
 
-
     })
+
+
 
 function searchFun() {
     // Declare variables
@@ -73,3 +72,4 @@ function searchFun() {
         }
     }
 }
+
