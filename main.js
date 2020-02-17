@@ -92,53 +92,66 @@ fetch("./cravingdata.json")
     .then(function (data) {
         const cravingdata = data.cravingdata;
 
-        let cravings = [];
 
+        // check deplicate craving items and push only unique items to cravings brakets
+        let cravings = [];
         for (let i = 0; i < cravingdata.length; i++) {
             const cravingitem = cravingdata[i].craving;
             if (!cravings.includes(cravingitem)) {
                 cravings.push(cravingitem);
             }
-
         }
+        // console.log(cravings)
 
-        console.log(cravings)
-
+        // CREATE <li> of cravings above
         for (let j = 0; j < cravings.length; j++) {
-            // CREATE  <li> of CravingItem
 
-            // decleare createLiTags as create <li> tag
+            // create <li> tag
             const createLi = document.createElement("li");
             // Create a text node 
             const textnode = document.createTextNode(cravings[j]);
             // Append the text to <li>
             createLi.appendChild(textnode);
-            // Append <li> to <ul> with id="list"
+            // Append <li> to <ul> of id="list"
             const ul = document.getElementById("myList")
+            // Append <li> tags that are created to <ul>
             ul.appendChild(createLi)
+            // Add className "list" to <li> tags
             createLi.classList.add("list");
 
 
             // Add eventListener to <li> tags
-
             createLi.addEventListener("click", (event) => {
-                // reasonText.textContent = reasonitem;
-                // solutionText.textContent = "yo";
                 getReasonAndSolution(cravings[j])
             });
+
         }
+
+
+        // function that get items of reasons and solution by filtering
         function getReasonAndSolution(craving) {
             const filteredCravings = cravingdata.filter((item) => {
-               return (item.craving === craving)
+                return (item.craving === craving)
             })
             console.log(filteredCravings);
         }
-        
-
-        // const sample = [{fruit: "🍐"},{fruit: "🍎"}];
-
-        // const test = sample.filter((item)=> {
-        //     return (item.fruit === "🍐");
-        // });
-        // console.log(test)
     })
+
+
+// Function that makes search bar
+function searchCraving() {
+    let input = document.getElementById('myInput').value;
+    input = input.toLowerCase();
+    let allLi = document.getElementsByTagName('li');
+    
+    // Loop through all list items, and hide those who don't match the search query
+    for (let i = 0; i < allLi.length; i++) {
+        if (allLi[i].textContent.toLowerCase().includes(input)) {
+            allLi[i].style.display = "";
+        } else {
+            allLi[i].style.display = "none";
+        }
+    }
+}
+
+
