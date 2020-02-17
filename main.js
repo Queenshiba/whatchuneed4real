@@ -133,8 +133,39 @@ fetch("./cravingdata.json")
             const filteredCravings = cravingdata.filter((item) => {
                 return (item.craving === craving)
             })
-            console.log(filteredCravings);
+
+
+            for (let x = 0; x < filteredCravings.length; x++) {
+
+
+                const reasons = filteredCravings[x].reason;
+                const createDivForReason = document.createElement('div');
+                createDivForReason.classList.add("li-reason");
+                const reasonTextnode = document.createTextNode(reasons)
+                createDivForReason.appendChild(reasonTextnode)
+                const resultContainer = document.getElementById('result-container')
+                resultContainer.appendChild(createDivForReason)
+
+
+                const solutions = filteredCravings[x].solution;
+                const solutionText = document.createElement('p');
+                const solutionTextnode = document.createTextNode(solutions)
+                solutionText.appendChild(solutionTextnode)
+                createDivForReason.appendChild(solutionText)
+
+
+
+                console.log(reasons)
+                console.log(solutions)
+            }
+
+
+            // console.log(filteredCravings);
+
         }
+
+
+
     })
 
 
@@ -143,7 +174,7 @@ function searchCraving() {
     let input = document.getElementById('myInput').value;
     input = input.toLowerCase();
     let allLi = document.getElementsByTagName('li');
-    
+
     // Loop through all list items, and hide those who don't match the search query
     for (let i = 0; i < allLi.length; i++) {
         if (allLi[i].textContent.toLowerCase().includes(input)) {
