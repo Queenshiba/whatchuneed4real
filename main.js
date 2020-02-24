@@ -100,8 +100,11 @@ fetch("./cravingdata.json")
             if (!cravings.includes(cravingitem)) {
                 cravings.push(cravingitem);
             }
+
+
         }
-        // console.log(cravings)
+
+        console.log(cravings)
 
         // CREATE <li> of cravings above
         for (let j = 0; j < cravings.length; j++) {
@@ -122,8 +125,22 @@ fetch("./cravingdata.json")
 
             // Add eventListener to <li> tags
             createLi.addEventListener("click", (event) => {
+                // when click, show reasons and solution
                 getReasonAndSolution(cravings[j])
+                // when click, hide lists of cravings and input 
+                const searchBox = document.getElementById('search-box');
+                // const input = document.getElementById('myInput')
+                searchBox.style.display = "none"
+                // input.style.display = "none"
+                // when click, show a name of craving
+                const createPForcravingName = document.createElement('p');
+                const cravingNameText = document.createTextNode(cravings[j])
+                createPForcravingName.appendChild(cravingNameText)
+                const cravingNameContainer = document.getElementById('cravingName')
+                cravingNameContainer.appendChild(createPForcravingName)
             });
+
+
 
         }
 
@@ -137,6 +154,14 @@ fetch("./cravingdata.json")
 
             for (let x = 0; x < filteredCravings.length; x++) {
 
+            
+                // const cravingName = cravingdata[x].craving;
+                // console.log(cravingdata[x].craving)
+                // const createPForcravingName = document.createElement('p');
+                // const cravingNameText = document.createTextNode(cravingName)
+                // createPForcravingName.appendChild(cravingNameText)
+                // const cravingNameContainer = document.getElementById('cravingName')
+                // cravingNameContainer.appendChild(createPForcravingName)
 
                 const reasons = filteredCravings[x].reason;
                 const createDivForReason = document.createElement('div');
@@ -155,8 +180,8 @@ fetch("./cravingdata.json")
 
 
 
-                console.log(reasons)
-                console.log(solutions)
+                // console.log(reasons)
+                // console.log(solutions)
             }
 
 
@@ -167,6 +192,8 @@ fetch("./cravingdata.json")
 
 
     })
+
+
 
 
 // Function that makes search bar
@@ -184,5 +211,11 @@ function searchCraving() {
         }
     }
 }
+
+function refreshPage(){
+    window.location.reload();
+} 
+
+
 
 

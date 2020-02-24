@@ -2,56 +2,58 @@
     padding: 0;
     margin: 0;
     font-size: 1em;
+    /* background: #ff6363; */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-#myList {
-    background: lightslategrey;
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.search-box {
+    background: white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.list {
+    background: lightgray;
     transition: background-color .5s;
+    list-style: none;
 }
 
 li:hover {
-    background-color: lightgray;
+    background-color: white;
     border: black;
-}
-
-a {
-    text-decoration: none;
 }
 
 input {
     height: 30px;
-    width: 50%;
+    width: 100%;
     background: gray;
     border: none;
 }
 
 ::placeholder {
     color: white;
+    padding-left: 5px;
 }
 
 .result-container {
-    background: palevioletred;
+    background-color: yellow;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin: 15px;
 }
 
-.loader {
-    display: none;
-    border: 16px solid #f3f3f3;
-    /* Light grey */
-    border-top: 16px solid #3498db;
-    /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+.cravingName {
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.li-reason {
+    padding: 10px 0px;
 }
