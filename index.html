@@ -2,45 +2,44 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="style.css">
 
-    
+
     <title>Document</title>
 </head>
 
 <body>
 
+    <!-- <h1 class="title">What you need for real</h1> -->
+    <img class="title-img" src="/img/title.png" alt="what you need for real" srcset="">
+    <p class="explanation">Type a name of your craving then find out what your body actually needs.</p>
 
-    <h1 class="title">What you need for real</h1>
-    <p>Type a name of your craving then this app tells you what your body actually needs.</p>
-
-<div class="search-box" id="search-box">
-        <p>I'm craving for ...</p>
+    <div class="search-box" id="search-box">
+        <!-- <p>I'm craving for ...</p> -->
 
 
-    <input type="text" id="myInput" placeholder="Type..." onkeyup="searchCraving()">
-    <div id="list-craving">
-        <ul id="myList" class="myList">
+        <input type="text" id="myInput" placeholder="Type your craving..." onkeyup="searchCraving()">
+        <div id="list-craving">
+            <ul id="myList" class="myList">
 
-        </ul>
+            </ul>
 
+        </div>
     </div>
-</div>
 
 
     <div class="result-container" id="result-container">
-<div id="cravingName" class="cravingName"><p>My craving is </p></div>
-        <!-- <p>What you actually need is</p>
-        <div id="reason-text"></div>
+        <div id="cravingNameBox" class="cravingNameBox">
+        </div>
 
-        <p>You should have this instead...</p>
-        <div id="solution-text"></div> -->
     </div>
-    <button type="submit"  onClick="refreshPage()">Refresh Button</button>
+
+    <button type="submit" onClick="refreshPage()"><img src="/img/allow.png" alt="">Try Again</button>
 
 </body>
 <script type="text/javascript" src="cravingdata.json"></script>

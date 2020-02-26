@@ -1,88 +1,3 @@
-// "use strict";
-
-// fetch("./cravingdata.json")
-//     .then(function (resp) {
-//         return resp.json();
-//     })
-//     .then(function (cravingdata) {
-// //         const data = cravingdata;
-// //         console.log(data)
-// //         const cravings = data.cravingdata[2];
-
-//         let newArr = [];
-
-// //         for (let i = 0; i < 34; i++) {
-// //             const cravingitem = data.cravingdata[i].craving
-
-// //             const cravingitemLower = cravingitem.toLowerCase()
-
-// //             const reasonitem = data.cravingdata[i].reason
-// //             const solutionitem = data.cravingdata[i].solution
-
-
-// //             if (!newArr.includes(cravingitem)) {
-// //                 newArr.push(cravingitem);
-// //             }
-
-// //             const li = document.getElementsByTagName('li');
-// //             const reasonText = document.getElementById("reason-text");
-// //             // console.log(reasonText)
-// //             const solutionText = document.getElementById("solution");
-// //             // console.log(solutionText)
-
-// //             // li.addEventListener("click", (event) => {
-// //             //     reasonText.textContent = reasonitem;
-// //             //     solutionText.textContent = "yo";
-// //             // });
-
-
-
-
-
-// //         }
-
-// //         for (let j = 0; j < 18; j++) {
-// //         // CREATE  <li> of CravingItem
-
-// //         // decleare createLiTags as create <li> tag
-// //         var createLi = document.createElement("li");
-// //         // Create a text node 
-// //         var textnode = document.createTextNode(newArr[j]);
-// //         // Append the text to <li>
-// //         createLi.appendChild(textnode);
-// //         // Append <li> to <ul> with id="list"
-// //         var allLi = document.getElementById("myList").appendChild(createLi)
-// //         allLi.classList.add("list");
-
-// //         }
-
-// //     })
-
-
-
-// // function searchFun() {
-// //     // Declare variables
-// //     var input, filter, ul, li, a, i, txtValue;
-// //     input = document.getElementById("myInput");
-// //     filter = input.value.toLowerCase();
-// //     ul = document.getElementById("myList");
-// //     li = ul.getElementsByTagName('li');
-
-
-// //     // Loop through all list items, and hide those who don't match the search query
-// //     for (i = 0; i < li.length; i++) {
-// //         a = li[i].getElementsByTagName("a")[0];
-// //         txtValue = a.textContent || a.innerText;
-// //         if (txtValue.toLowerCase().indexOf(filter) > -1) {
-// //             li[i].style.display = "";
-// //         } else {
-// //             li[i].style.display = "none";
-// //         }
-// //     }
-// }
-
-
-
 "use strict";
 
 fetch("./cravingdata.json")
@@ -131,16 +46,28 @@ fetch("./cravingdata.json")
                 const searchBox = document.getElementById('search-box');
                 // const input = document.getElementById('myInput')
                 searchBox.style.display = "none"
-                // input.style.display = "none"
+
+                //show "your craving is"
+                const createPForYourCravingIs = document.createElement('p');
+                const YourCravingIsText = document.createTextNode("Your craving is ...")
+                createPForYourCravingIs.appendChild(YourCravingIsText)
+                const cravingNameContainer = document.getElementById('cravingNameBox')
+                cravingNameContainer.appendChild(createPForYourCravingIs)
+                createPForYourCravingIs.classList.add("myCravingIs");
+
                 // when click, show a name of craving
                 const createPForcravingName = document.createElement('p');
                 const cravingNameText = document.createTextNode(cravings[j])
                 createPForcravingName.appendChild(cravingNameText)
-                const cravingNameContainer = document.getElementById('cravingName')
                 cravingNameContainer.appendChild(createPForcravingName)
-            });
+                createPForcravingName.classList.add("cravingName")
 
 
+
+
+
+            }
+            );
 
         }
 
@@ -154,7 +81,7 @@ fetch("./cravingdata.json")
 
             for (let x = 0; x < filteredCravings.length; x++) {
 
-            
+
                 // const cravingName = cravingdata[x].craving;
                 // console.log(cravingdata[x].craving)
                 // const createPForcravingName = document.createElement('p');
@@ -164,20 +91,39 @@ fetch("./cravingdata.json")
                 // cravingNameContainer.appendChild(createPForcravingName)
 
                 const reasons = filteredCravings[x].reason;
-                const createDivForReason = document.createElement('div');
-                createDivForReason.classList.add("li-reason");
+                const createDivForResult = document.createElement('div');
+                createDivForResult.classList.add("listInResult");
+                const createPForReason = document.createElement('p')
+                createPForReason.classList.add("reasonInResult");
                 const reasonTextnode = document.createTextNode(reasons)
-                createDivForReason.appendChild(reasonTextnode)
+                createPForReason.appendChild(reasonTextnode)
+                createDivForResult.appendChild(createPForReason)
                 const resultContainer = document.getElementById('result-container')
-                resultContainer.appendChild(createDivForReason)
+                resultContainer.appendChild(createDivForResult)
+
+                resultContainer.style.display = "flex"
+                
+                // create ptag before reason in result "you might..."
+                const youMight = document.createElement('p');
+                const youMightTextnode = document.createTextNode("Your body might need")
+                youMight.appendChild(youMightTextnode)
+                youMight.classList.add("youMight");
+                createDivForResult.insertBefore(youMight, createPForReason)
 
 
                 const solutions = filteredCravings[x].solution;
-                const solutionText = document.createElement('p');
+                const createpForsolution = document.createElement('p');
+                createpForsolution.classList.add("solutionInResult");
                 const solutionTextnode = document.createTextNode(solutions)
-                solutionText.appendChild(solutionTextnode)
-                createDivForReason.appendChild(solutionText)
+                createpForsolution.appendChild(solutionTextnode)
+                createDivForResult.appendChild(createpForsolution)
 
+                // create ptag before solutiom in result "you should have..."
+                const youShould = document.createElement('p');
+                const youShouldTextnode = document.createTextNode("You should have these instead")
+                youShould.appendChild(youShouldTextnode)
+                youShould.classList.add("youShould");
+                createDivForResult.insertBefore(youShould, createpForsolution)
 
 
                 // console.log(reasons)
@@ -212,9 +158,9 @@ function searchCraving() {
     }
 }
 
-function refreshPage(){
+function refreshPage() {
     window.location.reload();
-} 
+}
 
 
 
