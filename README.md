@@ -1,17 +1,19 @@
-# whatchuneed4real
+#  What you need for real - 'whatchuneed4real'
 
 ## Introduction
 
 ### What is this?
 - The app that tells you what causes food cravings and what you can eat instead.
 
+![](https://media.giphy.com/media/KHnfGFqk4RoFFzDJPX/giphy.gif)
+
 ### The project's aim
 
 - to experience Web Scraping with using [cheerio](https://cheerio.js.org/)
-    * *Web Scraping Part is in another my github repo [webScraping](https://github.com/Queenshiba/webscraping)
+    * *Web Scraping Part is in another my GitHub repo [webScraping](https://github.com/Queenshiba/webscraping)
 - to format data from Web Scraping as json
 - to manipulate data  
-- create html tags with javascript
+- create html tags with javaScript
 - to practice making a search bar, searching through the items in the search query
 
 
@@ -21,7 +23,7 @@
 - hosted GitHub Page [here](https://queenshiba.github.io/whatchuneed4real/)
 
 ## Technologies
-- javascript
+- javaScript
 - CSS
 - HTML
 - json
@@ -41,8 +43,8 @@
 - [natureworksbest.com](https://natureworksbest.com/naturopathy-works/food-cravings/)
     - a website where I used for web scraping
 - [Intro To Web Scraping With Node.js & Cheerio](https://youtu.be/LoziivfAAjE)
-    - a youtube tutorial for web scraping by Traversy Media
+    - a YouTube tutorial for web scraping by Traversy Media
 - [uigradients.com](https://uigradients.com/)
-    - a website where grenerates beautiful gradients
+    - a website where generates beautiful gradients
 - [unsplash.com](https://unsplash.com/)
     - a website where has impressive pictures of daily stuffs
